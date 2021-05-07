@@ -110,7 +110,7 @@ double** randm(int rows, int cols){
             }
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
-char ProgName[]="Лабораторна робота 3";
+char ProgName[]="Г‹Г ГЎГ®Г°Г ГІГ®Г°Г­Г  Г°Г®ГЎГ®ГІГ  3";
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int nCmdShow)
 {
@@ -135,7 +135,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
 
 
     hWnd=CreateWindow(ProgName,
-        "Лабораторна робота 3. Виконала Саніна А. М.",
+        "Г‹Г ГЎГ®Г°Г ГІГ®Г°Г­Г  Г°Г®ГЎГ®ГІГ  3. Г‚ГЁГЄГ®Г­Г Г«Г  Г‘Г Г­ВіГ­Г  ГЂ. ГЊ.",
         WS_OVERLAPPEDWINDOW,
         400,
         100,
@@ -353,7 +353,7 @@ void DFS(HDC hdc, int nx[N], int ny[N], char* numVerticle[N], double** matrix, i
 
         srand(0421);
         double** T = randm(n, n);
-        double coef = 1 - 2*0.02 - 1*0.005 - 0.25;
+        double coef = 1 - 2*0.01 - 1*0.005 - 0.15;
         double** A = mulmr(coef, T, n, n);
              for (int i = 0; i < n; i++)
         {
